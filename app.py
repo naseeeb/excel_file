@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # MongoDB setup
 client = MongoClient('mongodb://localhost:27017/')
-db = client['your_database']
+db = client['exceldb']
 colors_hsm_collection = db['colors_hsm']
 zee_network_collection = db['zee_network']
 
