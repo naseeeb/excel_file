@@ -169,7 +169,7 @@ def import_star_network():
         return jsonify({'status': 'Data imported successfully!'})
 
     except Exception as e:
-        return jsonify({'error': str(e)}), 500@app.route('/data_star_network', methods=['GET'])
+        return jsonify({'error': str(e)}), 500
 @app.route('/data_star_network', methods=['GET'])
 def get_star_data():
     data = list(star_network_collection.find({}, {'_id': 0}))
